@@ -26,6 +26,11 @@ enum class Difficulty {
     EASY, MEDIUM, HARD
 }
 
+object StudentProgress {
+    var total: Int = 10
+    var answered: Int = 3
+}
+
 fun main() {
     val question1 = Question<String>("Quoth the raven ___", "nevermore", Difficulty.MEDIUM)
     val question2 = Question<Boolean>("The sky is green. True or false", false, Difficulty.EASY)
