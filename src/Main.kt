@@ -37,6 +37,9 @@ class Quiz {
     }
 }
 
+val Quiz.StudentProgress.progressText: String
+    get() = "${Quiz.answered} of ${Quiz.total} answered."
+
 fun main() {
-    println("${Quiz.answered} of ${Quiz.total} answered.")
+    println(Quiz.progressText)
 }
